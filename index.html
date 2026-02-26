@@ -2,22 +2,80 @@
 <html>
 <head>
     <title>EatFeast Login</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #fbc2a3, #f8b6c1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background: white;
+            width: 350px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .login-box img {
+            width: 200px;
+            margin-bottom: 15px;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+            color: #ff6b81;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background-color: #ff6b81;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-box button:hover {
+            background-color: #ff4f6d;
+        }
+    </style>
 </head>
-<body style="text-align:center; font-family: Arial;">
 
-    <h1 style="color: orange;"> EatFeast </h1>
+<body>
 
-    <h2>Login Form</h2>
+    <div class="login-box">
 
-    <form>
-        <label>Username:</label><br>
-        <input type="text" name="username" placeholder="Enter Username"><br><br>
+        <!-- Logo embedded directly -->
+        <img src="https://i.ibb.co/8zK5YxV/eatfeast-logo.png" alt="EatFeast Logo">
 
-        <label>Password:</label><br>
-        <input type="password" name="password" placeholder="Enter Password"><br><br>
+        <h2>Customer Login</h2>
 
-        <input type="submit" value="Submit">
-    </form>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <button type="submit">Login</button>
+        </form>
+
+    </div>
 
 </body>
 </html>
