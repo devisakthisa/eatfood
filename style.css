@@ -1,0 +1,68 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: white;
+    padding: 15px;
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+}
+
+.categories div {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 100px;
+}
+
+/* Products */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Button */
+.btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: pink;
+    padding: 8px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
