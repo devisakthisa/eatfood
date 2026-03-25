@@ -1,6 +1,7 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>Eat Feast</title>
 
 <style>
@@ -8,13 +9,13 @@
 body{
     margin:0;
     font-family:Arial;
-    background:#ffe6ea;
+    background:#f3f3f3;
 }
 
 /* Header */
 
 .header{
-    background:#ff4d6d;
+    background:#e23744;
     color:white;
     padding:15px;
     display:flex;
@@ -22,7 +23,7 @@ body{
 }
 
 .logo{
-    font-size:26px;
+    font-size:25px;
     font-weight:bold;
 }
 
@@ -33,13 +34,14 @@ body{
     font-size:18px;
 }
 
+
 /* Offer */
 
 .offer{
-    background:#ff99aa;
+    background:#ffd6d6;
     text-align:center;
-    padding:20px;
-    font-size:25px;
+    padding:15px;
+    font-size:22px;
     font-weight:bold;
 }
 
@@ -53,21 +55,23 @@ body{
 
 .search input{
     width:60%;
-    padding:12px;
+    padding:10px;
 }
 
 .search button{
-    padding:12px;
-    background:#ff4d6d;
+    padding:10px;
+    background:#e23744;
     color:white;
     border:none;
 }
+
 
 /* Section */
 
 h2{
     margin-left:20px;
 }
+
 
 /* Grid */
 
@@ -77,6 +81,7 @@ h2{
     gap:20px;
     padding:20px;
 }
+
 
 /* Card */
 
@@ -91,6 +96,7 @@ h2{
 .card img{
     width:100%;
     height:150px;
+    object-fit:cover;
     border-radius:10px;
 }
 
@@ -108,7 +114,7 @@ h2{
 }
 
 .add{
-    background:#ff4d6d;
+    background:#e23744;
     color:white;
     border:none;
     padding:5px 10px;
@@ -137,20 +143,16 @@ h2{
 </div>
 
 
+
 <div class="offer">
-
 🔥 50% Offer Today | Free Delivery 🔥
-
 </div>
 
 
 
 <div class="search">
-
 <input type="text" placeholder="Search food">
-
 <button>🔍</button>
-
 </div>
 
 
@@ -160,7 +162,7 @@ h2{
 <div class="foods">
 
 <div class="card">
-<img src="https://picsum.photos/200?1">
+<img src="https://images.unsplash.com/photo-1601924582975-7e7f8b0c8c1f">
 <h3>Veg Pizza</h3>
 <p class="veg">Veg</p>
 <p class="price">₹120</p>
@@ -168,7 +170,7 @@ h2{
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/200?2">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
 <h3>Burger</h3>
 <p class="veg">Veg</p>
 <p class="price">₹80</p>
@@ -176,7 +178,7 @@ h2{
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/200?3">
+<img src="https://images.unsplash.com/photo-1630383249896-424e482df921">
 <h3>Dosa</h3>
 <p class="veg">Veg</p>
 <p class="price">₹60</p>
@@ -184,15 +186,7 @@ h2{
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/200?4">
-<h3>Meals</h3>
-<p class="veg">Veg</p>
-<p class="price">₹100</p>
-<button class="add">+</button>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/200?5">
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950">
 <h3>Paneer</h3>
 <p class="veg">Veg</p>
 <p class="price">₹150</p>
@@ -200,10 +194,18 @@ h2{
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/200?6">
+<img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b">
 <h3>Fried Rice</h3>
 <p class="veg">Veg</p>
 <p class="price">₹130</p>
+<button class="add">+</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617196038435-0a2c1c2f9b6d">
+<h3>Meals</h3>
+<p class="veg">Veg</p>
+<p class="price">₹100</p>
 <button class="add">+</button>
 </div>
 
@@ -216,7 +218,7 @@ h2{
 <div class="foods">
 
 <div class="card">
-<img src="https://picsum.photos/200?7">
+<img src="https://images.unsplash.com/photo-1604908176997-431c2c7b0f1c">
 <h3>Chicken Biryani</h3>
 <p class="nonveg">Non-Veg</p>
 <p class="price">₹180</p>
@@ -224,7 +226,7 @@ h2{
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/200?8">
+<img src="https://images.unsplash.com/photo-1625944525903-bb6c5f8e8e62">
 <h3>Mutton Biryani</h3>
 <p class="nonveg">Non-Veg</p>
 <p class="price">₹220</p>
@@ -232,7 +234,7 @@ h2{
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/200?9">
+<img src="https://images.unsplash.com/photo-1594007654729-407eedc4fe24">
 <h3>Chicken Pizza</h3>
 <p class="nonveg">Non-Veg</p>
 <p class="price">₹200</p>
@@ -240,7 +242,7 @@ h2{
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/200?10">
+<img src="https://images.unsplash.com/photo-1600891963935-cb8b4e2d2c3b">
 <h3>Grill Chicken</h3>
 <p class="nonveg">Non-Veg</p>
 <p class="price">₹250</p>
@@ -248,7 +250,7 @@ h2{
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/200?11">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947">
 <h3>Fish Fry</h3>
 <p class="nonveg">Non-Veg</p>
 <p class="price">₹160</p>
@@ -256,7 +258,7 @@ h2{
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/200?12">
+<img src="https://images.unsplash.com/photo-1604909052743-94e838986d24">
 <h3>Egg Rice</h3>
 <p class="nonveg">Non-Veg</p>
 <p class="price">₹120</p>
