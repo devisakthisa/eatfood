@@ -1,44 +1,29 @@
 body {
     font-family: Arial;
     margin: 0;
-    background: #f2f2f2;
-    text-align: center;
+    background: #f5f5f5;
 }
 
 /* Header */
 header {
-    background: white;
+    background: #ff3366;
+    color: white;
+    text-align: center;
     padding: 15px;
 }
 
-/* Categories */
-.categories {
-    display: flex;
-    overflow-x: auto;
-    padding: 10px;
-    gap: 10px;
-}
-
-.categories div {
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-    min-width: 100px;
-}
-
-/* Products */
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+/* Home cards */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
 }
 
 .card {
     background: white;
-    margin: 10px;
+    border-radius: 10px;
     padding: 10px;
-    width: 150px;
-    border-radius: 15px;
     position: relative;
 }
 
@@ -47,22 +32,40 @@ header {
     border-radius: 10px;
 }
 
-/* Button */
 .btn {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    background: pink;
-    padding: 8px 12px;
-    border-radius: 10px;
+    background: #ff3366;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
     text-decoration: none;
-    font-size: 20px;
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: white;
+/* Cart */
+.cart-item {
+    display: flex;
+    background: white;
+    margin: 10px;
     padding: 10px;
-    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.cart-item img {
+    width: 80px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+/* Order button */
+.order-btn {
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    background: green;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
 }
